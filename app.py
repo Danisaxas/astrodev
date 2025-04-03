@@ -11,16 +11,16 @@ def index():
     Esta función se llama cuando un usuario visita la página principal (/).
     Ahora renderiza la plantilla 'desarrollador.html'.
     """
-    return render_template('index.html')
+    return render_template('desarrollador.html')
 
 # Define una ruta para la página "/home".
 @app.route('/home')
 def home():
     """
     Esta función se llama cuando un usuario visita la ruta /home.
-    Renderiza la plantilla 'saludo.html'.
+    Renderiza la plantilla 'home.html'.
     """
-    return render_template('saludo.html')
+    return render_template('home.html')
 
 # Este bloque principal asegura que el servidor de desarrollo de Flask se ejecute
 # solo cuando el script se ejecuta directamente (no cuando se importa como módulo).
