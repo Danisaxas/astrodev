@@ -57,7 +57,14 @@
             margin-left: auto;
             margin-right: auto;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            /* New styles to display Imgur content as a background */
+            background: url(https://imgur.com/a/Wp5O9D9) no-repeat center center;
+            background-size: cover;
         }
+        .user-icon img {
+            display: none; /* Hide the img element */
+        }
+
         p {
             color: #4b5563;
             text-align: center;
@@ -114,10 +121,7 @@
     <div class="container">
         <h1><span>&lt;/&gt;</span> Astro Delover <span>&lt;/&gt;</span></h1>
         <div class="user-icon">
-            <blockquote class="imgur-embed-pub" lang="en" data-id="a/Wp5O9D9" data-context="false" >
-                <a href="//imgur.com/a/Wp5O9D9"></a>
-            </blockquote>
-            <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+             <img src="https://imgur.com/a/Wp5O9D9" alt="Imgur" style="display:none;">
         </div>
         <p>
             {•} Name: Daniel <br>
