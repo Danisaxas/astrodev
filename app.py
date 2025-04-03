@@ -11,7 +11,7 @@ def index():
     Esta función se llama cuando un usuario visita la página principal (/).
     Ahora renderiza la plantilla 'desarrollador.html'.
     """
-    return render_template('desarrollador.html')
+    return render_template('index.html')
 
 # Define una ruta para la página "/home".
 @app.route('/home')
