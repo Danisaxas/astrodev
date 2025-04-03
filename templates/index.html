@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f0f0; /* Gris muy claro, similar a GitHub */
+            background-color: #000000;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,7 +18,8 @@
             transition: background-color 0.5s ease;
         }
         .container {
-            background-color: #ffffff;
+            /* Gradiente de blanco a gris 30% y 60% */
+            background: linear-gradient(to bottom, #ffffff 30%, #f0f0f0 60%);
             border-radius: 0.75rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             padding: 2rem;
@@ -31,10 +32,16 @@
             box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 3px 6px -1px rgba(0, 0, 0, 0.08);
         }
         h1 {
-            color: #1e293b;
+            color: #2d3748; /* Gris oscuro */
             text-align: center;
             margin-bottom: 1.5rem;
             transition: color 0.3s ease;
+            font-size: 2.25rem; /* Tamaño de fuente más grande */
+            font-weight: 700; /* Texto en negrita */
+            letter-spacing: -0.05rem; /* Espaciado de letras ligeramente más estrecho */
+        }
+        h1 span {
+            color: #6366f1; /* Azul índigo */
         }
         p {
             color: #4b5563;
@@ -46,30 +53,32 @@
         a {
             display: inline-block;
             padding: 0.75rem 1.5rem;
-            background-color: #6366f1;
+            background-color: #000000;
             color: #ffffff;
             text-decoration: none;
             border-radius: 0.375rem;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
             font-weight: 600;
             font-size: 1rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         a:hover {
-            background-color: #4338ca;
+            background-color: #1a202c;
             transform: translateY(-0.25rem);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            color: #ffffff;
         }
         a:active {
-            background-color: #2e2294;
+            background-color: #2d3748;
             transform: translateY(0);
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>¡Hola, Mundo!</h1>
+        <h1><span>&lt;/&gt;</span> Astro Delover <span>&lt;/&gt;</span></h1>
         <p>Esta es una página web básica creada con Flask. Hemos mejorado su apariencia para una mejor experiencia de usuario.</p>
         <a href="/saludo/Usuario">Saludar a Usuario</a>
     </div>
