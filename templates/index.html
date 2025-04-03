@@ -39,10 +39,25 @@
             font-size: 2.5rem;
             font-weight: 700;
             letter-spacing: -0.05rem;
+            display: flex; /* Para alinear el icono y el texto */
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
         }
         h1 span {
             color: #6366f1;
+            /* No mostrar el texto de etiqueta */
+            display: none;
         }
+        .code-icon {
+            margin-right: 0.5rem;
+            width: 2.4rem; /* Tamaño del icono */
+            height: 2.4rem;
+            /* Use a direct link to the image */
+            background: url(https://img.icons8.com/ios-glyphs/100/000000/source-code.png) no-repeat center center;
+            background-size: contain;
+        }
+
         .user-icon {
             width: 5.5rem;
             height: 5.5rem;
@@ -56,6 +71,7 @@
             margin-bottom: 1rem;
             margin-left: auto;
             margin-right: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             /* Use the provided image URL */
             background: url(https://img.icons8.com/?size=100&id=15263&format=png&color=000000) no-repeat center center;
             background-size: contain;
@@ -122,7 +138,7 @@
 </head>
 <body>
     <div class="container">
-        <h1><span>&lt;/&gt;</span> Astro Delover <span>&lt;/&gt;</span></h1>
+        <h1><span class="code-icon"></span> Astro Delover <span class="code-icon"></span></h1>
         <div class="user-icon">
         </div>
         <p>
