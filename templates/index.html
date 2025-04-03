@@ -44,7 +44,7 @@
             color: #6366f1;
         }
         .user-icon {
-            width: 5.5rem; /* Aumentado el tamaño del icono */
+            width: 5.5rem;
             height: 5.5rem;
             background-color: #a0aec0;
             border-radius: 50%;
@@ -52,7 +52,7 @@
             justify-content: center;
             align-items: center;
             color: #ffffff;
-            font-size: 3.5rem; /* Aumentado el tamaño de la letra dentro del icono */
+            font-size: 3.5rem;
             margin-bottom: 1rem;
             margin-left: auto;
             margin-right: auto;
@@ -61,9 +61,7 @@
             background: url(https://img.icons8.com/?size=100&id=24845&format=png&color=000000) no-repeat center center;
             background-size: contain;
         }
-        .user-icon img {
-            display: none; /* Hide the img element */
-        }
+
         p {
             color: #4b5563;
             text-align: center;
@@ -75,7 +73,7 @@
         .link-container { /* Nuevo contenedor para los enlaces */
             display: flex;
             justify-content: center; /* Centrar los enlaces horizontalmente */
-            gap: 1rem; /* Espacio entre los enlaces */
+            gap: 1.5rem; /* Espacio entre los enlaces */
             margin-top: 1rem; /* Margen superior para separarlos del texto */
         }
 
@@ -106,13 +104,20 @@
         }
         .github-icon {
             margin-right: 0.5rem; /* Espacio entre el icono y el texto */
-            width: 1.5rem; /* Tamaño del icono */
-            height: 1.5rem;
+            width: 2.4rem; /* Tamaño del icono de GitHub, 4% más pequeño */
+            height: 2.4rem;
+            /* Updated GitHub icon path and make it white */
+            background: url(https://img.icons8.com/?size=100&id=12598&format=png&color=000000) no-repeat center center;
+            background-size: contain;
+            filter: brightness(0) invert(1);
         }
         .telegram-icon {
             margin-right: 0.5rem;
-            width: 1.5rem;
-            height: 1.5rem;
+            width: 2.4rem; /* Igualar el ancho al del icono de GitHub */
+            height: 2.4rem; /* Igualar la altura al del icono de GitHub */
+            background: url(https://img.icons8.com/?size=100&id=9R1sV3QvY18K&format=png&color=000000) no-repeat center center;
+            background-size: contain;
+            filter: brightness(0) invert(1); /* Poner el icono de Telegram en blanco */
         }
     </style>
 </head>
@@ -120,7 +125,6 @@
     <div class="container">
         <h1><span>&lt;/&gt;</span> Astro Delover <span>&lt;/&gt;</span></h1>
         <div class="user-icon">
-             <img src="https://img.icons8.com/?size=100&id=24845&format=png&color=000000" alt="User" style="display:none;">
         </div>
         <p>
             {•} Name: Daniel <br>
@@ -135,11 +139,11 @@
         </p>
         <div class="link-container">
             <a href="https://github.com/Danisaxas" class="github-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github github-icon"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.3-.87 2.23a4 4 0 0 1-1.13 1.27v4"></path><path d="M12 15c-1.7 0-3-1.3-3-3 0-1.6 1.3-3 3-3 1.6 0 3 1.3 3 3 0 1.7-1.3 3-3 3z"></path></svg>
+                <span class="github-icon"></span>
                 GitHub
             </a>
             <a href="https://t.me/astrozdev" class="telegram-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send telegram-icon"><path d="M20 6 9 17 2 17l10-5 3 3 7-11z"></path><path d="M22 3l-7 7"></path></svg>
+                <span class="telegram-icon"></span>
                 Telegram
             </a>
         </div>
