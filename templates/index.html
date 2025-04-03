@@ -44,27 +44,26 @@
             color: #6366f1;
         }
         .user-icon {
-            width: 4.5rem;
-            height: 4.5rem;
+            width: 5.5rem; /* Aumentado el tamaño del icono */
+            height: 5.5rem;
             background-color: #a0aec0;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             color: #ffffff;
-            font-size: 3rem;
+            font-size: 3.5rem; /* Aumentado el tamaño de la letra dentro del icono */
             margin-bottom: 1rem;
             margin-left: auto;
             margin-right: auto;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            /* New styles to display Imgur content as a background */
-            background: url(https://imgur.com/a/Wp5O9D9) no-repeat center center;
-            background-size: cover;
+            /* Use the provided image URL */
+            background: url(https://img.icons8.com/?size=100&id=24845&format=png&color=000000) no-repeat center center;
+            background-size: contain;
         }
         .user-icon img {
             display: none; /* Hide the img element */
         }
-
         p {
             color: #4b5563;
             text-align: center;
@@ -121,7 +120,7 @@
     <div class="container">
         <h1><span>&lt;/&gt;</span> Astro Delover <span>&lt;/&gt;</span></h1>
         <div class="user-icon">
-             <img src="https://imgur.com/a/Wp5O9D9" alt="Imgur" style="display:none;">
+             <img src="https://img.icons8.com/?size=100&id=24845&format=png&color=000000" alt="User" style="display:none;">
         </div>
         <p>
             {•} Name: Daniel <br>
