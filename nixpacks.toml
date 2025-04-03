@@ -1,2 +1,8 @@
+[build]
+command = "pip install -r requirements.txt"
+
 [start]
-command = "python app.py" # o "python main.py"
+command = "python app.py"
+
+[phases.setup]
+pkgs = ["python3"]
