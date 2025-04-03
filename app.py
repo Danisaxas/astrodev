@@ -22,15 +22,6 @@ def home():
     """
     return render_template('saludo.html')
 
-# Define una ruta para la página "/saludo/nombre".
-@app.route('/saludo/<nombre>')
-def saludo(nombre):
-    """
-    Esta función se llama cuando un usuario visita la ruta /saludo/nombre.
-    Recibe un parámetro 'nombre' de la URL y lo pasa a la plantilla 'saludo.html'.
-    """
-    return render_template('saludo.html', nombre=nombre)
-
 # Este bloque principal asegura que el servidor de desarrollo de Flask se ejecute
 # solo cuando el script se ejecuta directamente (no cuando se importa como módulo).
 if __name__ == '__main__':
