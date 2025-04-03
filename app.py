@@ -1,21 +1,28 @@
 from flask import Flask, render_template
 
 # Crea una instancia de la aplicación Flask.
-# El primer argumento es el nombre del módulo o paquete.
-# __name__ es una variable especial de Python que es el nombre del módulo actual.
 app = Flask(__name__)
 
-# Define una ruta para la página principal.
-# El decorador @app.route('/') asocia la función hola_mundo con la ruta '/'.
-# Cuando un usuario visita la ruta '/', se ejecuta la función hola_mundo.
+# Define la ruta para la página principal.
+# Ahora, la ruta principal ("/") renderiza el contenido de "desarrollador.html".
 @app.route('/')
-def hola_mundo():
+def index():
     """
     Esta función se llama cuando un usuario visita la página principal (/).
-    Devuelve la cadena '¡Hola, Mundo!' que se mostrará en el navegador.
+    Ahora renderiza la plantilla 'desarrollador.html'.
     """
-    return render_template('index.html')
+    return render_template('desarrollador.html')
 
+# Define una ruta para la página "/home".
+@app.route('/home')
+def home():
+    """
+    Esta función se llama cuando un usuario visita la ruta /home.
+    Renderiza la plantilla 'saludo.html'.
+    """
+    return render_template('saludo.html')
+
+# Define una ruta para la página "/saludo/nombre".
 @app.route('/saludo/<nombre>')
 def saludo(nombre):
     """
