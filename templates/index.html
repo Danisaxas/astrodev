@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Gris claro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.5s ease; /* Transición suave para el fondo */
+        }
+        .container {
+            background-color: #ffffff; /* Blanco */
+            border-radius: 0.75rem; /* Bordes redondeados */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Sombra suave */
+            padding: 2rem;
+            width: 90%;
+            max-width: 600px; /* Ancho máximo */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos hover */
+        }
+        .container:hover {
+            transform: translateY(-0.5rem); /* Ligeramente hacia arriba en hover */
+            box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 3px 6px -1px rgba(0, 0, 0, 0.08); /* Sombra más pronunciada en hover */
+        }
+        h1 {
+            color: #1e293b; /* Gris muy oscuro, casi negro */
+            text-align: center;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        p {
+            color: #4b5563; /* Gris más suave */
+            text-align: center;
+            margin-bottom: 2rem;
+            line-height: 1.6; /* Mejora la legibilidad */
+            transition: color 0.3s ease;
+        }
+        a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #6366f1; /* Azul índigo */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 0.375rem; /* Bordes redondeados */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para hover y activo */
+            font-weight: 600; /* Texto en negrita */
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+        }
+        a:hover {
+            background-color: #4338ca; /* Azul índigo más oscuro en hover */
+            transform: translateY(-0.25rem); /* Ligeramente hacia arriba en hover */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Sombra más grande */
+        }
+        a:active {
+            background-color: #2e2294; /* Azul índigo aún más oscuro en activo */
+            transform: translateY(0); /* Sin desplazamiento en activo */
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Sombra más pequeña en activo */
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola, Mundo!</h1>
-    <p>Esta es una página web básica creada con Flask.</p>
-    <a href="/saludo/Usuario">Saludar a Usuario</a>
+    <div class="container">
+        <h1>¡Hola, Mundo!</h1>
+        <p>Esta es una página web básica creada con Flask. Hemos mejorado su apariencia para una mejor experiencia de usuario.</p>
+        <a href="/saludo/Usuario">Saludar a Usuario</a>
+    </div>
 </body>
 </html>
