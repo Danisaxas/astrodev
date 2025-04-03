@@ -1,0 +1,1 @@
+from app import app as application  # Importa la instancia de Flask desde app.py
